@@ -7,10 +7,15 @@
     <link rel="stylesheet" href="pmidia.css">
 </head>
 <body>
-    <header>
+    <header id="header" >
         <div>
         <img src="pin.png" alt="pin" id="pin" >  <strong>LOGO</strong> 
         </div>
+
+        <div>
+            <input type="checkbox" id="checkbox" onclick="traduzir()" >
+        </div>
+
         <div>
             <img src="lupa.png" alt="lupa" id="lupa">
         </div>
@@ -18,15 +23,14 @@
     <section id="sec1" >
     <div id="main1" > 
             <div id="flight" > 
-                <img src="aviao.png" alt="" id="aviao"> Flight 
+                <img src="aviao.png" alt="" id="aviao"> <small class="traduzir" >FLIGHT</small>
             </div>
             
             <div id="hotel">
-                <img src="cama.png" alt=""> Hotel
-            </div>
-
+                <img src="cama.png" alt=""> <small class="traduzir" >HOTEL</small>
+            </div>    
             <div id="rental">
-                <img src="jipe.png" alt=""> Rental
+                <img src="jipe.png" alt=""> <small class="traduzir" >RENTAL</small>
             </div>
 
         </div>
@@ -36,7 +40,7 @@
                     Travel the world with us
                 </h1>
                 <div id="p" >
-                <p class="Travel" >From</p>  
+                <p class="Travel">From</p>  
                 <p  id="to" class="Travel">To</p>
                 
                 </div>
@@ -137,5 +141,7 @@
 
    </footer>
 </body>
+
+<script src="pmidia.js"></script>
 
 </html>

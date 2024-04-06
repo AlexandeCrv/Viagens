@@ -60,6 +60,7 @@ body{
     margin-top: 140px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
     color: rgba(0, 0, 0, 0.753);
+    
 
 }
 
@@ -269,4 +270,49 @@ footer{
 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+}
+
+
+#checkbox{
+    
+}
+
+input[type="checkbox"]{
+    position: relative;
+    width: 80px;
+    height: 36px;
+    outline: none;   
+    -webkit-appearance: none;
+    background-color: wheat;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.2) ;
+}
+
+input:checked[type="checkbox"]{
+    background: rgba(0, 0, 0, 0.747);
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.8);
+
+}
+
+input[type="checkbox"]::before{
+    content: '';
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.2) ;
+    transform: scale(1.1);
+    transition: .5s;
+    cursor: pointer;
+}
+
+input:checked[type="checkbox"]::before{
+    left: 40px;
+}
+
+small{
+    font-size: 16px;
 }
