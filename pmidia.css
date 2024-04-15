@@ -25,7 +25,7 @@ color: #e74c3c;
 
 body{
     background-color: rgb(238, 238, 238);
-
+    
     margin: 0px;
 }
 
@@ -289,7 +289,7 @@ input[type="checkbox"]{
 }
 
 input:checked[type="checkbox"]{
-    background: rgba(0, 0, 0, 0.747);
+    background: rgba(139, 104, 104, 0.521);
     box-shadow: 0 0 5px rgb(0, 0, 0, 0.8);
 
 }
@@ -307,6 +307,7 @@ input[type="checkbox"]::before{
     transform: scale(1.1);
     transition: .5s;
     cursor: pointer;
+    
 }
 
 input:checked[type="checkbox"]::before{
@@ -315,4 +316,15 @@ input:checked[type="checkbox"]::before{
 
 small{
     font-size: 16px;
+}
+
+.dark{
+    background-color: rgba(0, 0, 0, 0.740);
+    color: white;
+
+}
+
+#SLC{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
